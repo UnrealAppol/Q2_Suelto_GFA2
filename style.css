@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+body{
+    background-image: url('starback.jpg');
+}
+
+header{
+    width: 100vw;
+    height: 10vh;
+    background-color: gray;
+    border: 0.1px solid beige;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+}
+
+#gasgiant{
+    animation-name: gasgiant;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+#moon{
+    animation-name: moon;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+#asteroid{
+    animation-name: asteroid;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#star{
+    animation-name: star;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gasgiant{
+    0% {transform: translate(-500px,0px);}
+    25%{transform: translate(250px,200px);}
+    50%{transform: translate(500px,300px);}
+    75%{transform: translate(750px,400px);}
+    100%{transform: translate(1000px,500px);}
+}
+
+@keyframes moon{
+    0% {transform: translate(1500px,-500px);}
+    25%{transform: translate(1000px,-200px);}
+    50%{transform: translate(300px,300px);}
+    75%{transform: translate(750px,400px);}
+    100%{transform: translate(1000px,500px);}
+}
+
+@keyframes asteroid{
+    0% {transform: translate(1600px,-600px);}
+    50%{transform: translate(400px,400px);}
+    100%{transform: translate(1000px,500px);}
+}
+
+@keyframes star{
+    0% {transform: translate(0%,-1500px);}
+    25%{transform: translate(0px,-500px);}
+    50%{transform: translate(0px,-250px);}
+    100%{transform: translate(0px,500px);}
+}
+
+
+
+
+
+
+
